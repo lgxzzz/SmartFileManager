@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:gravity="center_horizontal"
-        android:text="绿霸文件大师V1.0"
+        android:text="智能文件管理器"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/white" />
 
@@ -55,7 +55,6 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="一款绿色安全的APP"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/color_red_1" />
 
@@ -90,7 +89,6 @@
             android:layout_height="wrap_content"
             android:autoLink="email"
             android:gravity="center"
-            android:text="作者邮箱：csulennon@163.com"
             android:textColor="@color/white"
             android:textSize="12sp" />
 
@@ -98,7 +96,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="@string/copyright"
             android:textColor="@color/white"
             android:layout_marginTop="5dp"
             android:textSize="12sp" />

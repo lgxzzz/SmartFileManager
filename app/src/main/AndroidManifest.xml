@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cmcm.greendamexplorer.activity"
+    package="com.smart.filemanager.activity"
     android:versionCode="3"
     android:versionName="1.0.2" >
 
@@ -12,73 +12,68 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
-    <instrumentation
-        android:name="android.test.InstrumentationTestRunner"
-        android:label="Test db"
-        android:targetPackage="com.cmcm.greendamexplorer.activity" >
-    </instrumentation>
 
     <application
-        android:name="com.cmcm.greendamexplorer.core.engine.DeploymentOperation"
+        android:name="com.smart.filemanager.core.engine.DeploymentOperation"
         android:allowBackup="true"
         android:icon="@drawable/ic_logo"
         android:label="@string/app_name" >
         <uses-library android:name="android.test.runner" />
 
         <activity
-            android:name="com.cmcm.greendamexplorer.activity.MainActivity"
+            android:name="com.smart.filemanager.activity.MainActivity"
             android:windowSoftInputMode="adjustPan"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
         </activity>
         <activity
-            android:name="com.cmcm.greendamexplorer.activity.ImageWallActivity"
+            android:name="com.smart.filemanager.activity.ImageWallActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
         </activity>
         <activity
-            android:name="com.cmcm.greendamexplorer.activity.VideoActivity"
+            android:name="com.smart.filemanager.activity.VideoActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
         </activity>
         <activity
-            android:name="com.cmcm.greendamexplorer.activity.AudioActivity"
+            android:name="com.smart.filemanager.activity.AudioActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
         </activity>
         <activity
-            android:name="com.cmcm.greendamexplorer.activity.DocumentsActivity"
+            android:name="com.smart.filemanager.activity.DocumentsActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
         </activity>
         <activity
-            android:name="com.cmcm.greendamexplorer.activity.ZipActivity"
+            android:name="com.smart.filemanager.activity.ZipActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
         </activity>
         <activity
-            android:name="com.cmcm.greendamexplorer.activity.ApplicationsActivity"
+            android:name="com.smart.filemanager.activity.ApplicationsActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
         </activity>
         <activity
-            android:name="com.cmcm.greendamexplorer.activity.ApksActivity"
+            android:name="com.smart.filemanager.activity.ApksActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
         </activity>
         <activity
-            android:name="com.cmcm.greendamexplorer.activity.AboutMeActivity"
+            android:name="com.smart.filemanager.activity.AboutMeActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
         </activity>
         <activity
-            android:name="com.cmcm.greendamexplorer.activity.WelcomActivity"
+            android:name="com.smart.filemanager.activity.WelcomActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
         </activity>
         <activity
-            android:name="com.cmcm.greendamexplorer.activity.StartUI"
+            android:name="com.smart.filemanager.activity.StartUI"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan" >
@@ -90,19 +85,19 @@
         </activity>
 
         <service
-            android:name="com.cmcm.greendamexplorer.core.engine.service.delete.DeleteFileService"
+            android:name="com.smart.filemanager.core.engine.service.delete.DeleteFileService"
             android:exported="false"
             android:process=":remote" >
             <intent-filter>
-                <action android:name="com.cmcm.greendamexplorer.core.engine.service.delete.DeleteFileService" />
+                <action android:name="com.smart.filemanager.core.engine.service.delete.DeleteFileService" />
             </intent-filter>
         </service>
         <service
-            android:name="com.cmcm.greendamexplorer.core.engine.service.copy.CopyFileService"
+            android:name="com.smart.filemanager.core.engine.service.copy.CopyFileService"
             android:exported="false"
             android:process=":remote" >
             <intent-filter>
-                <action android:name="com.cmcm.greendamexplorer.core.engine.service.copy.CopyFileService" />
+                <action android:name="com.smart.filemanager.core.engine.service.copy.CopyFileService" />
             </intent-filter>
         </service>
     </application>
