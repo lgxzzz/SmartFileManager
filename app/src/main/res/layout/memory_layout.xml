@@ -3,15 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/black"
+    android:background="#d3d7d4"
     >
 
 	<LinearLayout 
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:orientation="horizontal"
-	    android:layout_marginRight="80dp"
-	    android:layout_marginLeft="80dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginLeft="5dp"
 	    android:layout_gravity="center"
 	    android:gravity="center"
 	    >
@@ -32,25 +32,26 @@
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:text="车机内存"
-	                android:textColor="@android:color/white"
-	                android:textSize="25dp"
+	                android:textColor="@android:color/black"
+	                android:textSize="15dp"
 	                />
 	             <TextView 
 	                android:layout_width="0dp"
 	                android:layout_height="wrap_content"
 	                android:text="扫描中"
-	                android:textSize="25dp"
+	                android:textSize="15dp"
 	                android:layout_gravity="right"
 	                android:gravity="right"
 	                android:layout_weight="1"
 	                android:id="@+id/tv_usage"
+					 android:textColor="@android:color/black"
 	                />
 	        </LinearLayout>
-			<com.ime.memory.MemoryUsageView
+			<com.smart.filemanager.clean.MemoryUsageView
 			    android:layout_width="match_parent"
 			    android:layout_height="wrap_content"
 			    android:id="@+id/memo_usage"
-			    ></com.ime.memory.MemoryUsageView>
+			    ></com.smart.filemanager.clean.MemoryUsageView>
 	        <LinearLayout 
 	            android:layout_width="match_parent"
 	            android:layout_height="wrap_content"
@@ -73,10 +74,12 @@
 	                <TextView 
 	                    android:layout_width="wrap_content"
 	                    android:layout_height="wrap_content"
-	                    android:text="地图"
-	                    android:layout_gravity="center"
-	                    android:layout_marginLeft="20dp"
-	                    android:id="@+id/map_usage"
+	                    android:text="其他"
+	                    android:layout_gravity="left|center"
+	                    android:layout_marginLeft="3dp"
+	                    android:id="@+id/other_usage"
+						android:textColor="@android:color/black"
+						android:textSize="8dp"
 	                    />
 	            </LinearLayout>
 	              <LinearLayout 
@@ -95,9 +98,11 @@
 	                    android:layout_width="wrap_content"
 	                    android:layout_height="wrap_content"
 	                    android:text="音频"
-	                    android:layout_gravity="center"
-	                     android:layout_marginLeft="20dp"
+						android:layout_gravity="left|center"
+						android:layout_marginLeft="3dp"
+						android:textColor="@android:color/black"
 	                     android:id="@+id/music_usage"
+						android:textSize="8dp"
 	                    />
 	            </LinearLayout>
 	              <LinearLayout 
@@ -116,9 +121,11 @@
 	                    android:layout_width="wrap_content"
 	                    android:layout_height="wrap_content"
 	                    android:text="视频"
-	                    android:layout_gravity="center"
-	                     android:layout_marginLeft="20dp"
+						android:layout_gravity="left|center"
+						android:layout_marginLeft="3dp"
 	                       android:id="@+id/video_usage"
+						android:textColor="@android:color/black"
+						android:textSize="8dp"
 	                    />
 	            </LinearLayout>
 	              <LinearLayout 
@@ -137,40 +144,47 @@
 	                    android:layout_width="wrap_content"
 	                    android:layout_height="wrap_content"
 	                    android:text="系统"
-	                    android:layout_gravity="center"
-	                     android:id="@+id/other_usage"
+						android:layout_gravity="left|center"
+						android:layout_marginLeft="3dp"
+	                     android:id="@+id/system_usage"
+						android:textColor="@android:color/black"
+						android:textSize="8dp"
 	                    />
 	            </LinearLayout>
 	        </LinearLayout>
 	    </LinearLayout>
-	    <Button 
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:id="@+id/btn_clear"
-	        android:text="立即清理"
-	        android:gravity="center"
-	        android:textColor="@android:color/white"
-	        android:background="@drawable/btn_clear_selector"
-	        android:textSize="20dp"
-	        android:layout_margin="5dp"
-	        />
+
 	     <Button 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:id="@+id/btn_exit"
 	        android:text="退出"
 	        android:gravity="center"
-	        android:textColor="@android:color/white"
+			 android:textColor="@android:color/black"
 	        android:background="@drawable/btn_exit_selector"
 	       android:textSize="20dp"
 	        android:layout_margin="5dp"
+			 android:visibility="gone"
 	        />
 	</LinearLayout>
 	<ListView 
 	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
+	    android:layout_height="0dp"
+		android:layout_weight="1"
 	    android:id="@+id/clear_option_listview"
-	    android:layout_marginLeft="80dp"
-	    android:layout_marginRight="80dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
 	    ></ListView>
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/btn_clear"
+		android:text="一键清理"
+		android:gravity="center"
+		android:textColor="@android:color/white"
+		android:background="@drawable/btn_clear_selector"
+		android:textSize="20dp"
+		android:layout_margin="5dp"
+		android:layout_gravity="center"
+		/>
 </LinearLayout>
