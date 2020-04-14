@@ -513,7 +513,7 @@ public class FileCategoryPageFragment extends Fragment implements OnClickListene
     @Override
     public void onResume() {
         super.onResume();
-
+        reScan();
     }
 
     /**

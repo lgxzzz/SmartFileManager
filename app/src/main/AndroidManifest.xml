@@ -100,6 +100,7 @@
                 <action android:name="com.smart.filemanager.core.engine.service.copy.CopyFileService" />
             </intent-filter>
         </service>
+
     </application>
 
 </manifest>

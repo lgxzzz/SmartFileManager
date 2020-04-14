@@ -107,7 +107,7 @@ public class MemoryUsageView extends LinearLayout{
 	}
 	
 	private int getColorByType(int mType){
-		  int color = Color.parseColor("#FFFFFF");
+		  int color = Color.parseColor("#d3d7d4");
 		  if (mType == BuiltinStorageMgr.TYPE_OTHER) {
 			  color = Color.parseColor("#ee243e");
 		  }else if(mType == BuiltinStorageMgr.TYPE_MUSIC){

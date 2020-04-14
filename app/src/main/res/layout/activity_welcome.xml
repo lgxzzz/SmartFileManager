@@ -22,7 +22,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
-                android:src="@drawable/feature_title" />
+                android:visibility="invisible"
+                />
 
             <ImageView
                 android:id="@+id/imageView1"
@@ -46,11 +47,10 @@
                 android:src="@drawable/feature_dot" />
 
             <ImageView
-                android:id="@+id/imageView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
-                android:src="@drawable/feature_scroll_txt" />
+                android:src="@drawable/feature_dot" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -117,11 +117,10 @@
                 android:src="@drawable/feature_arrow_up" />
 
             <ImageView
-                android:id="@+id/imageView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
-                android:src="@drawable/feature_more_txt" />
+                android:src="@drawable/feature_dot" />
 
             <Button
                 android:id="@+id/btn_start"

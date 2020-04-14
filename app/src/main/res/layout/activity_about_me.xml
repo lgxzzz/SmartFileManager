@@ -31,7 +31,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="8dp"
             android:gravity="center_vertical"
-            android:text="您的支持是我们的动力"
+            android:text="您的支持是我的动力"
             android:textColor="@color/white"
             android:textSize="18sp" />
     </LinearLayout>
@@ -80,7 +80,6 @@
             android:autoLink="web"
            
             android:gravity="center"
-            android:text="github：https://github.com/csulennon/GreenDamFileExploere"
             android:textColor="@color/white"
             android:textSize="10sp" />
 

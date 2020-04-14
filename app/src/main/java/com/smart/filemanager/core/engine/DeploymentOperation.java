@@ -171,7 +171,7 @@ public class DeploymentOperation extends Application {
         }
         Log.d(TAG, "--->拷贝数据库成功！");
 
-        initialFavoriteDatabase();
+//        initialFavoriteDatabase();
     }
 
     public void testFindByPath() {
